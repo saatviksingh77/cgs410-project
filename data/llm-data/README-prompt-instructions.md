@@ -2,15 +2,17 @@
 
 <b>
 
-- RUN THE PROMPT ```10 TIMES``` TO COLLECT A DATA OF ```500 RAW SENTENCES```
+- RUN THE PROMPT ```10 TIMES``` TO COLLECT A DATA OF ```500 RAW SENTENCES``` FROM THE CHOSEN LLM
 
 - THE RAW SENTENCES ARE THEN TO BE PUT IN A ```.txt``` FILE WITH ```EACH LINE HAVING ONE SENTENCE ONLY```
+
+- ChatGPT free, Claude free, Gemini Thinking mode
 
 </b>
 
 <br>
 
-> For all languages, run a small sample back through Claude or GPT and ask "Are these sentences grammatically correct and natural in [said language]?” as a quick quality check before committing to parsing 500 of them.
+> For all languages, run a small sample back through the LLM and ask "Are these sentences grammatically correct and natural in [said language]?” as a quick quality check before committing to parsing 500 of them.
 
 Verification prompt:
 ```
@@ -24,7 +26,7 @@ Flag any sentence that fails any criterion.
 <br><br>
 
 -------ENGLISH------- <br>
-– Store in ```data/llm-data/llm-raw/en.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/en.txt```
 ```
 Generate exactly 50 sentences in English that resemble informal but grammatically complete web writing, the kind found in online news comments, blog posts, and factual Q&A forums. Topics should span everyday factual knowledge: science, geography, current events, technology, sports, and history. 
 
@@ -41,7 +43,7 @@ Each sentence must be between 12 and 20 words long. Do not use passive voice exc
 <br>
 
 -------HINDI------- <br>
-– Store in ```data/llm-data/llm-raw/hi.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/hi.txt```
 ```
 हिंदी समाचार पत्र की शैली में ठीक 50 वाक्य लिखें। विषय इनमें से 
 हों: राजनीति, भूगोल, विज्ञान, इतिहास, खेल, या अर्थव्यवस्था। 
@@ -64,7 +66,7 @@ Each sentence must be between 12 and 20 words long. Do not use passive voice exc
 <br>
 
 ––––––GERMAN––––––– <br>
-– Store in ```data/llm-data/llm-raw/de.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/de.txt```
 ```
 Schreibe genau 50 Sätze auf Deutsch, die dem Stil von Wikipedia-Artikeln 
 und deutschen Nachrichtentexten entsprechen. Themen sollen aus den 
@@ -90,7 +92,7 @@ die Sätze aus, einen pro Zeile, ohne jeglichen zusätzlichen Text.
 <br>
 
 ––––––ARABIC––––––– <br>
-– Store in ```data/llm-data/llm-raw/ar.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/ar.txt```
 ```
 اكتب بالعربية الفصحى المعيارية (MSA) تحديداً 50 جملة بأسلوب 
 إخباري رسمي، مماثل لما ينشر في وكالة رويترز أو الجزيرة باللغة 
@@ -114,7 +116,7 @@ die Sätze aus, einen pro Zeile, ohne jeglichen zusätzlichen Text.
 <br>
 
 ––––––JAPANESE––––––– <br>
-– Store in ```data/llm-data/llm-raw/ja.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/ja.txt```
 ```
 日本語のウィキペディア記事のスタイルで、正確に50文を作成してください。
 地理・科学・歴史・文化・技術・経済などの百科事典的なトピックを
@@ -138,7 +140,7 @@ die Sätze aus, einen pro Zeile, ohne jeglichen zusätzlichen Text.
 <br>
 
 ––––––FRENCH––––––– <br>
-– Store in ```data/llm-data/llm-raw/fr.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/fr.txt```
 ```
 Génère exactement 50 phrases en français dans le style d'articles 
 Wikipédia et de journaux de référence comme Le Monde. Les sujets 
@@ -165,7 +167,7 @@ une par ligne, sans aucun texte supplémentaire.
 <br>
 
 ––––––TURKISH––––––– <br>
-– Store in ```data/llm-data/llm-raw/tr.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/tr.txt```
 ```
 Türkçe haber metni üslubunda, Hürriyet veya Milliyet gazetelerindeki 
 haberlere benzer şekilde tam olarak 50 cümle yaz. Konu alanları şunları 
@@ -189,7 +191,7 @@ her satıra bir cümle gelecek şekilde, hiçbir ek açıklama olmadan.
 <br>
 
 ––––––MANDARIN CHINESE––––––– <br>
-– Store in ```data/llm-data/llm-raw/zh.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/zh.txt```
 ```
 请以中文维基百科文章的风格，写出恰好50个句子。主题应涵盖：地理、
 科学、历史、文化、经济和技术等百科知识领域。
@@ -211,7 +213,7 @@ her satıra bir cümle gelecek şekilde, hiçbir ek açıklama olmadan.
 <br>
 
 ––––––RUSSIAN––––––– <br>
-– Store in ```data/llm-data/llm-raw/ru.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/ru.txt```
 ```
 Напиши ровно 50 предложений на русском языке в стиле качественной 
 российской журналистики — уровня «Коммерсантъ» или «Российской газеты». 
@@ -237,7 +239,7 @@ her satıra bir cümle gelecek şekilde, hiçbir ek açıklama olmadan.
 <br>
 
 ––––––FINNISH––––––– <br>
-– Store in ```data/llm-data/llm-raw/fi.txt```
+– Store in ```data/llm-data/llm-raw/LLMNAME/fi.txt```
 ```
 Kirjoita täsmälleen 50 lausetta suomeksi, jotka edustavat erilaisia 
 tekstilajeja: uutisteksti, tietosanakirjatyyli ja asiateksti. 
