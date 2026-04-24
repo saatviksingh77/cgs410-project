@@ -2,7 +2,7 @@
 
 <b>
 
-- RUN THE PROMPT ```10 TIMES``` TO COLLECT A DATA OF ```500 RAW SENTENCES``` FROM THE CHOSEN LLM
+- RUN THE PROMPT MULTIPLE TIMES (variable) TO COLLECT A DATA OF ```500 RAW SENTENCES``` FROM THE CHOSEN LLM
 
 - THE RAW SENTENCES ARE THEN TO BE PUT IN A ```.txt``` FILE WITH ```EACH LINE HAVING ONE SENTENCE ONLY```
 
@@ -14,7 +14,6 @@
 
 > For all languages, run a small sample back through the LLM and ask "Are these sentences grammatically correct and natural in [said language]?” as a quick quality check before committing to parsing 500 of them.
 
-Verification prompt:
 ```
 Here are 10 sentences in [language]. For each one, tell me:
 1. Is it grammatically correct?
@@ -22,6 +21,11 @@ Here are 10 sentences in [language]. For each one, tell me:
 3. Is it between [X] and [Y] words long?
 Flag any sentence that fails any criterion.
 ```
+
+> – Sometimes an instruction like below has to be added to ensure uniqueness of responses <br>
+> ```strictly generate unique new sentences each time and do not repeat or rephrase from previous responses``` <br>
+> – Increasing single prompt sentence count also ensures better uniqueness within responses. <br>
+> – Issue observed mainly in free versions, or less mainstream languages.
 
 <br><br>
 
